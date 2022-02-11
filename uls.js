@@ -42,10 +42,9 @@ thumbnail.forEach((thumb,index)=>{
 thumbClicks();
 autoplay(10000);
 function autoplay(speed){
-  let i=0;
-  setInterval((i)=>{
+  for(let i =0;i<images.length;i++){
     addHidetoslide();
-    images[i].classList.remove("hide");
-    i++;
-  },speed);
+     images[i].classList.remove("hide");
+     setTimeout(()=>{},speed);
+  }
 }
