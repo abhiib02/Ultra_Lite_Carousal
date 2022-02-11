@@ -40,6 +40,7 @@ thumbnail.forEach((thumb,index)=>{
 })
 }
 thumbClicks();
+autoplay(10000);
 function autoplay(speed){
   let i=0;
   setInterval((i)=>{
@@ -48,4 +49,3 @@ function autoplay(speed){
     i++;
   },speed);
 }
-autoplay(1000)
