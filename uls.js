@@ -40,3 +40,12 @@ thumbnail.forEach((thumb,index)=>{
 })
 }
 thumbClicks();
+function autoplay(speed){
+  let i=0;
+  setInterval((i)=>{
+    addHidetoslide();
+    images[i].classList.remove("hide");
+    i++;
+  },speed);
+}
+autoplay(1000)
